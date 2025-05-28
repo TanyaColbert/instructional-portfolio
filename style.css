@@ -89,11 +89,11 @@ footer .socials a {
 /* === ABOUT PAGE STYLES === */
 .about-section {
     background-color: #000000;
-    padding: 100px 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 .container {
