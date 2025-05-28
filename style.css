@@ -88,55 +88,49 @@ footer .socials a {
 
 /* === ABOUT PAGE STYLES === */
 .about-section {
-    background-color: #000000;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    overflow: visible;
+  padding: 40px 20px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 900px;
-    background: #E8FC94;
-    padding: 50px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    color: #121212;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #E8FC94;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  color: #121212;
 }
 
 .container-flex {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .text-col {
-    flex: 2;
+  flex: 2;
 }
 
 .image-col {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-wrapper {
-    background-color: #4FC3B3;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    max-width: 300px;
+  background-color: #4FC3B3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  max-width: 350px;
 }
 
 .profile-photo {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
 }
 
 .about-section h2 {
