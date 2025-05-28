@@ -137,14 +137,26 @@
     </section>
 
     <script>
-        // Portfolio toggle functionality
+        // Portfolio toggle functionality with accordion behavior
         document.addEventListener('DOMContentLoaded', function() {
             const buttons = document.querySelectorAll('.toggle-button');
             buttons.forEach(function(button) {
                 button.addEventListener('click', function() {
                     const content = button.nextElementSibling;
-                    content.classList.toggle('show');
-                    button.textContent = content.classList.contains('show') ? 'Hide Details' : 'View Details';
+                    const isCurrentlyOpen = content.classList.contains('show');
+                    
+                    // Close all other cards first
+                    buttons.forEach(function(otherButton) {
+                        const otherContent = otherButton.nextElementSibling;
+                        otherContent.classList.remove('show');
+                        otherButton.textContent = 'View Details';
+                    });
+                    
+                    // If this card wasn't open, open it
+                    if (!isCurrentlyOpen) {
+                        content.classList.add('show');
+                        button.textContent = 'Hide Details';
+                    }
                 });
             });
         });
