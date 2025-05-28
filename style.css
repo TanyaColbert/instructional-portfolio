@@ -195,7 +195,9 @@ body {
 }
 
 .card-content.show {
-    max-height: 600px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .card-content p {
@@ -206,6 +208,17 @@ body {
 
 .card-content strong {
     color: #000000;
+}
+
+.card-content a {
+    color: #696EFE;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.card-content a:hover {
+    color: #5755d9;
+    text-decoration: none;
 }
 
 /* About Section */
